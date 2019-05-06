@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [(py2k and py>26) or (py3k and py>31)]
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -37,3 +37,4 @@ about:
 extra:
   recipe-maintainers:
     - jakirkham
+    - monaldoj
